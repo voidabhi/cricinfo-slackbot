@@ -1,1 +1,1 @@
-web: gunicorn zalgoslack:app --log-file=-
+web: gunicorn cricinfoslack:app --log-file=-
