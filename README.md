@@ -2,11 +2,11 @@
 
 Slack bot that publishes cricinfo updates
 
-## Usage
+### Usage
 
 From slack channel type `/cricinfo`
 
-## Integration
+### Integration
 
 1. Go to your channel
 2. Click on **Configure Integrations**.
@@ -18,3 +18,7 @@ From slack channel type `/cricinfo`
   - For the **Autocomplete help text**, check to show the command in autocomplete list.
     - Description: `Get live cricket updates from cricinfo on slack`
   - Descriptive Label: `Cricket Match Live Updates`
+
+### Contributing
+
+- Please use the [issue tracker](https://github.com/voidabhi/cricinfo-slackbot/issues) to report any bugs or file feature requests.
