@@ -9,6 +9,7 @@ IN_TOKEN = os.getenv("IN_TOKEN", "2iglLhnzYhEyCEokaadYaMU0")
 OUT_TOKEN = os.getenv("OUT_TOKEN", "xoxp-20234140193-20234140305-21354085846-a7ed8b48d0")
 
 app = Flask(__name__)
+c = Cricinfo()
 
 def post_message(token, channel, text, username):
     URL = "https://slack.com/api"
@@ -23,6 +24,7 @@ def post_message(token, channel, text, username):
 
 @app.route("/cricinfo", methods=["POST"])
 def cricinfo():
+    # validate required arguments
     try:
         in_token = request.form["token"]
         channel = request.form["channel_id"]
@@ -32,8 +34,9 @@ def cricinfo():
         abort(400)
     if in_token != IN_TOKEN:
         abort(401)
-    c = Cricinfo()
-    t = """
+    
+    # create message from template
+    tpl = """
         ```
             %s
         ```
@@ -42,8 +45,9 @@ def cricinfo():
     # r = post_message(OUT_TOKEN, channel, t, username)
     # if r.status_code != 200:
     #     abort(500)
-
-    return t
+    
+    # send message
+    return tpl
 
 if __name__ == "__main__":
     app.run()
