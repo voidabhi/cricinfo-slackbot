@@ -2,6 +2,8 @@
 
 Slack bot that publishes cricinfo updates
 
+![cricinfo-slackbot](https://raw.githubusercontent.com/voidabhi/cricinfo-slackbot/master/espn-cricinfo-cribuzz.png)
+
 ### Usage
 
 From slack channel type `/cricinfo`
