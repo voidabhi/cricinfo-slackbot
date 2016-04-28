@@ -5,8 +5,8 @@ import requests
 from flask import Flask, request, abort
 from cricinfo import Cricinfo
 
-IN_TOKEN = os.getenv("IN_TOKEN", "2iglLhnzYhEyCEokaadYaMU0")
-OUT_TOKEN = os.getenv("OUT_TOKEN", "xoxp-20234140193-20234140305-21354085846-a7ed8b48d0")
+IN_TOKEN = os.getenv("IN_TOKEN", "YOUR_IN_TOKEN")
+OUT_TOKEN = os.getenv("OUT_TOKEN", "YOUR_OUT_TOKEN")
 
 app = Flask(__name__)
 c = Cricinfo()
