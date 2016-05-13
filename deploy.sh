@@ -1,7 +1,7 @@
 
 
 # check if procfile exists
-file_exists=test -e "$file_name"
+file_exists=test -e "Procfile"
 
 # check if heroku branch exists
 remote_exists=`git show-ref refs/heads/heroku`
