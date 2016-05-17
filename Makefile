@@ -9,7 +9,6 @@ copy:
     mkdir dist
     cp -R cricinfo.py dist
     cp requirements.txt dist
-    cp Makefile dist
 
 tar:
     tar -zc dist/ | gzip > dist.tar.gz
