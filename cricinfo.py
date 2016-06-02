@@ -48,8 +48,3 @@ class Cricinfo(object):
         for match_xml in matches_xml:
             matches.append(Match.from_dict(match_xml))
         return matches
-
-
-
-if __name__=='__main__':
-    pass
