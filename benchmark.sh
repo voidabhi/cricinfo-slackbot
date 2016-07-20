@@ -4,4 +4,4 @@
 #!/bin/bash
 
 # check if apache benchmark exists
-command -v ab >/dev/null 2>&1 || { echo >&2 "I require foo but it's not installed.  Aborting."; exit 1; }
+command -v ab >/dev/null 2>&1  -n 1000 -c 100 http://localhost:5000/cricinfo || { echo >&2 "I require foo but it's not installed.  Aborting."; exit 1; }
