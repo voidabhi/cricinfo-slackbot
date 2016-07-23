@@ -11,6 +11,7 @@ OUT_TOKEN = os.getenv("OUT_TOKEN", "YOUR_OUT_TOKEN")
 app = Flask(__name__)
 c = Cricinfo()
 
+# calls slack's post mesage endpoint
 def post_message(token, channel, text, username):
     URL = "https://slack.com/api"
     CHAT_POST = "chat.postMessage"
