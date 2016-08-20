@@ -3,7 +3,7 @@
 build: clean copy tar
 
 clean:
-	@echo "Build started..."
+    @echo "Build started..."
     rm -rf dist dist.tar.gz
 
 copy:
@@ -12,7 +12,7 @@ copy:
     cp requirements.txt dist
 
 tar:
-	@echo "Build completed..."
+    @echo "Build completed..."
     tar -zc dist/ | gzip > dist.tar.gz
 
 .PHONY: build
