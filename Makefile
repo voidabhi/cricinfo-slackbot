@@ -1,10 +1,13 @@
 
 
-build: clean copy tar
+build: clean requirements copy tar
 
 clean:
     @echo "Build started..."
     rm -rf dist dist.tar.gz
+    
+requirements:
+	pip freeze > requirements.txt
 
 copy:
     mkdir dist
