@@ -15,7 +15,7 @@ From slack channel type `/cricinfo`
 3. Scroll all the way down to **DIY Integrations & Customizations section**.
 4. Click on **Add** next to **Slash Commands**.
   - Command: `/cricinfo`
-  - URL: `http://cricinfo-slack.herokuapp.com/cricinfo`
+  - URL: `https://cricinfo-slack.herokuapp.com/cricinfo`
   - Method: `POST`
   - For the **Autocomplete help text**, check to show the command in autocomplete list.
     - Description: `Get live cricket updates from cricinfo on slack`
