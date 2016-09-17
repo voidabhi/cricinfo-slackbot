@@ -7,12 +7,13 @@ clean:
     rm -rf dist dist.tar.gz
     
 requirements:
-	pip freeze > requirements.txt
+    pip freeze > requirements.txt
 
 copy:
     mkdir dist
-    cp -R cricinfo.py dist
+    cp cricinfo.py dist
     cp requirements.txt dist
+    cp runtime.txt dist
 
 tar:
     @echo "Build completed..."
