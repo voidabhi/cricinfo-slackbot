@@ -7,9 +7,11 @@ clean:
     rm -rf dist dist.tar.gz
     
 requirements:
+    @echo "Freezing pip requirements.."
     pip freeze > requirements.txt
 
 copy:
+    @echo "Create dist directory..."
     mkdir dist
     cp cricinfo.py dist
     cp requirements.txt dist
